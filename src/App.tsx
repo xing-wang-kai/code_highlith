@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React ,{useState, useEffect} from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import CodeEditor from './pages/home/code_editor.page';
+import Header from './pages/components/header/header.component';
+import NavRight from './pages/components/navRight/navRight.component';
+import Community from './pages/community/community';
+import CardProps from './pages/components/cardProps';
 
-function App() {
+const App:React.FC = () => {
+
+  const [card, setCard] = useState<CardProps[]>([])
+
+  const handleSetCards = (cardDict: CardProps) => {
+
+    const currentCards: CardProps[] = [...card, cardDict];
+    setCard(currentCards);
+
+    console.log("CARDS  ", card)
+  }
+
+  useEffect(()=>{
+    console.log(card)
+  }, [card])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='app-container'>
+    <Router>
+      <Header/>
+      <div className="body-container">
+        <NavRight/>
+        <Routes>
+            <Route path='/' element={<CodeEditor HandleCard={handleSetCards}/>}/>
+            <Route path='/comunidade' element={<Community cards={card}/>}/>
+        </Routes>
+      </div>
+    </Router>
+    </section>
   );
 }
 

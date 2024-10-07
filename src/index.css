@@ -1,8 +1,20 @@
+:root{
+  --cor-fundo: #051d3b;
+  --cor-pesquisa: #FFFFFF;
+  --cor-destaque: white;
+  --cor-padrao:  #FFFFFF;
+  --cor-primary: #FAC700;
+  --cor-blue: #5081FB;
+  --background-secondary: #141414;
+
+  --cor-pesquisa-opacity-16: rgba(255, 255, 255, 0.16);
+  --cor-pesquisa-opacity-24: rgba(255, 255, 255, 0.24);
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'inter';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
