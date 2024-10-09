@@ -19,13 +19,19 @@ const Community:React.FC<CommunityProps> = ({cards}) => {
                         color={card.color} 
                         language={card.language} 
                         code={card.code} />
-                <div className='c'>
+                <div className='community_body'>
                     <h3  className='community_body--title'>{card.title}</h3>
                     <p  className='community_body--description'>{card.description}</p>
                     <div className='community_body--resume'>
                         <div className='community_body--resume-engajamento'>
-                            <div className='community_body--resume-engajamento-heater'><img src={hearterPng} alt="imagem de coração" /></div>
-                            <div className='community_body--resume-engajamento-comment'><img src={commentPng} alt="imagem de ballow comments" /></div>
+                            <div className='community_body--resume-engajamento-heater'>
+                                <img src={hearterPng} alt="imagem de coração" />
+                                <p>9</p>
+                            </div>
+                            <div className='community_body--resume-engajamento-comment'>
+                                <img src={commentPng} alt="imagem de ballow comments" />
+                                <p>9</p>
+                            </div>
                         </div>
                         <div className='community_body--author'>
                                 <img src={authorPng} alt="imagem do author" />

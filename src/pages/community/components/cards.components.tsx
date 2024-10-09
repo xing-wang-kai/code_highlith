@@ -1,5 +1,7 @@
 import CardProps from "../../components/cardProps";
+import '../components/assets/styles/cards.scss';
 import '../../home/components/codBox/assets/style/codeBox.scss'
+
 
 
 const Card:React.FC<CardProps> = ({title, description, color, language, code}) => {
