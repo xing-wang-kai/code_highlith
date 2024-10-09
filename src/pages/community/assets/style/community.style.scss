@@ -16,4 +16,36 @@
         font-size: 16px;
         color: var(--cor-pesquisa)
     }
+    &--resume{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-engajamento{
+            display: flex;
+            flex-wrap: wrap;
+            &-heater{
+                width: 48px;
+                img{
+                    width: 26px;
+                }
+            }
+            &-comment{
+                img{
+                    width: 26px;
+                }
+
+            }
+        }
+    }
+    &--author{
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        color: var(--cor-pesquisa);
+        img{
+            width: 36px;
+            height: 36px;
+            margin-right: 15px;
+        }
+    }
 }
