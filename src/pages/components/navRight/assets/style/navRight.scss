@@ -9,12 +9,15 @@
 
 }
 .menu_container{
-    width: 20%;
+    width: 18%;
     height: 500px;
+    padding-left: 30px;
 }
 
 .menu_titulo{
     @extend %style-font-padrao;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 .menu_titulo{
     color: var(--cor-padrao);

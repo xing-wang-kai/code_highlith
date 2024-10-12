@@ -14,8 +14,7 @@ const Community:React.FC<CommunityProps> = ({cards}) => {
         cards.map( (card, key)=> (
             <div className='community_container--card' key={key}>
 
-                <Card   title={card.title}
-                        description={card.description}
+                <Card   
                         color={card.color} 
                         language={card.language} 
                         code={card.code} />

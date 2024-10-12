@@ -5,9 +5,11 @@
 .app-container{
   background-color: var(--cor-fundo);
   border-radius: 10px;
+  height: 100%;
 }
 
 .body-container{
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
